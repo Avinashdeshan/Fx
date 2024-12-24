@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SampleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a523a" height="93.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#758c4b" height="502.0" layoutX="4.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" width="496.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#758c4b" height="502.0" layoutX="509.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" width="687.0" />
+      <Label alignment="CENTER" layoutX="126.0" prefHeight="93.0" prefWidth="947.0" text="Item Management Form" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="71.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtId" layoutX="160.0" layoutY="114.0" prefHeight="46.0" prefWidth="324.0" promptText="id" />
+      <TextArea fx:id="txtName" layoutX="160.0" layoutY="174.0" prefHeight="46.0" prefWidth="324.0" promptText="name" />
+      <TextArea fx:id="txtQty" layoutX="160.0" layoutY="232.0" prefHeight="46.0" prefWidth="324.0" promptText="quentity" />
+      <TextArea fx:id="txtPrice" layoutX="160.0" layoutY="291.0" prefHeight="46.0" prefWidth="324.0" promptText="price" />
+      <TextArea fx:id="txtDes" layoutX="160.0" layoutY="349.0" prefHeight="165.0" prefWidth="324.0" promptText="description" />
+      <TableView fx:id="tblItems" layoutX="516.0" layoutY="110.0" prefHeight="486.0" prefWidth="670.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="54.39996337890625" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="151.199951171875" text="Name" />
+            <TableColumn fx:id="colQty" prefWidth="75.20001220703125" text="Quentity" />
+            <TableColumn fx:id="colPrice" prefWidth="97.59991455078125" text="Price" />
+            <TableColumn fx:id="colDes" prefWidth="199.20001220703125" text="Description" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77c0a6" height="58.0" layoutX="15.0" layoutY="527.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#258478" height="58.0" layoutX="308.0" layoutY="527.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+      <Button layoutX="22.0" layoutY="535.0" mnemonicParsing="false" onAction="#btnAddItemOnAction" prefHeight="39.0" prefWidth="166.0" text="ADD">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font></Button>
+      <Button layoutX="314.0" layoutY="535.0" mnemonicParsing="false" onAction="#btnRemoveItemOnAction" prefHeight="39.0" prefWidth="166.0" text="REMOVE">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77c0a6" height="46.0" layoutX="8.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+      <Label layoutX="12.0" layoutY="118.0" prefHeight="39.0" prefWidth="94.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77c0a6" height="46.0" layoutX="8.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+      <Label layoutX="10.0" layoutY="177.0" prefHeight="39.0" prefWidth="94.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77c0a6" height="46.0" layoutX="9.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77c0a6" height="46.0" layoutX="8.0" layoutY="232.0" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+      <Label layoutX="11.0" layoutY="235.0" prefHeight="39.0" prefWidth="94.0" text="Quentity:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="294.0" prefHeight="39.0" prefWidth="94.0" text="Price:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77c0a6" height="46.0" layoutX="9.0" layoutY="349.0" stroke="BLACK" strokeType="INSIDE" width="142.0" />
+      <Label layoutX="12.0" layoutY="352.0" prefHeight="39.0" prefWidth="128.0" text="Description:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
